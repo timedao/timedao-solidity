@@ -31,9 +31,11 @@ A tuple is composed of :
 0x6D5050dc441845bADA25a46BBC5f9783794E4085
 
 ## Testing the code
-npm install truffle -g<br>
-npm i<br>
+npm install truffle -g (if not already installed) <br>
+Install the modules : npm install<br>
+Setup your test environment : fire ganache, configure truffle-init.js,etc...<br>
+Tweak migrations : add/remove the deployment of simpleERC20 contract, it is here only for testing purposes
+<br>
 Compile and deploy the contracts : truffle compile --all, then truffle migrate --reset<br>
 <br>
-Setup your test environment (ganache for ex) then :<br>
-truffle test
+Unit tests : truffle test
