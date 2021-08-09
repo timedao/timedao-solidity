@@ -1,5 +1,8 @@
 # TimeAtom smart  contract
 
+## A word of caution
+This SDK and corresponding smart contracts are currently in alpha, use at your own risks
+
 TimeAtom is a decentralized key-value store with a built-in timelock feature.
 It is meant to store timelocked tuples.
 
@@ -13,7 +16,7 @@ A tuple is composed of :
 -  **checkHashKey**(string memory hashKey) public view returns (bool)
   <br>*Method used to check if a specific hashkey already exists* 
 -  **calculateFee**(uint256 endDate) public view returns (uint256) 
- <br>*Returns the cost to store a tuple until "endDate". Fees are expressed in USD* 
+ <br>*Returns the cost to store a tuple until "endDate".* 
 -  **makeAtom**(string memory hashKey,string memory _public_content,string memory _timelocked_content,int256 opening_date) public payable
   <br>*Method used to store a tuple, payment must be sent in the native token of the network : ETH for Ethereum networks, xDAI for the xdai network* 
 
