@@ -9,7 +9,7 @@ A tuple is composed of :
 - a timelocked field : accessible only after the opening date
 - a timestamp representing the desired opening date
 
-###Public Methods
+### Public Methods
 -  **checkHashKey**(string memory hashKey) public view returns (bool)
   <br>*Method used to check if a specific hashkey already exists* 
 -  **calculateFee**(uint256 endDate) public view returns (uint256) 
